@@ -24,8 +24,20 @@
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+
+  .login-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-control-login {
+    width: 100% !important;
+  }
   
   .btn-group {
+    width: 330px;
     margin-top: .0001px;
     margin-bottom: 20px;
   }
