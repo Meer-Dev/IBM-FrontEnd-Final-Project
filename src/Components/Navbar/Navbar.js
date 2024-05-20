@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css"
+import Dropdown from 'react-bootstrap/Dropdown';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navbar () {
 
@@ -76,9 +78,16 @@ function Navbar () {
                 </li>
                 {isLoggedIn?(
                     <>
-                        <li className="link">
-                            Welcome {email.split("@")[0]}
-                        </li>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="default" id="dropdown-basic">
+                                Welcome {email.split("@")[0]}
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="/profile">Your Profile</Dropdown.Item>
+                                <Dropdown.Item href="/reports">Your Reports</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
                         <li className="link">
                         <button className="btn2" onClick={handleLogout}>
                             Logout
