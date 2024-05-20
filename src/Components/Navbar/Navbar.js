@@ -72,7 +72,7 @@ function Navbar () {
                     <a href="#">Health Blog</a>
                 </li>
                 <li className="link">
-                    <a href="#">Reviews</a>
+                    <a href="/reviews">Reviews</a>
                 </li>
                 {isLoggedIn?(
                     <>
