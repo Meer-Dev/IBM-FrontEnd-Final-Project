@@ -63,7 +63,7 @@ function Navbar () {
                     <a href="../Landing_Page/LandingPage.html">Home</a>
                 </li>
                 <li className="link">
-                    <a href="#">Appointments</a>
+                    <a href="/booking-consultation">Appointments</a>
                 </li>
                 <li class="link">
                     <a href="/instant-consultation">Instant Booking</a>
